@@ -1,0 +1,29 @@
+<!--
+    Теґ <area> робить з певної зони зображення активну ділянку. Для цього потрібний контейнер
+    у виді <map> </map>, котрий пов'язаний із <img> атрибутами name="НАЗВА" і usemap="НАЗВА".
+    Атрибути:
+        shape="ЗНАЧЕННЯ" задає форму області.
+        coords="Х1, Y1, X2, Y2 і т.д." задає координати ділянки на зображенні.
+        href="ПОСИЛАННЯ" задає посилання для активної зони.
+        type="MIME-тип" задає MIME тип файлу посилання, використовується для стилізації.
+        target="ЗНАЧЕННЯ" задає значенням, яким чином відкрити посилання у браузері.
+        alt="ТЕКСТ" встановлює альтернативний текст області зображення. Не відображається браузером,
+        але сприймається пошуковими системами.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>study tag area</title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <p>
+            <img src="Sources/Graph/Screenshot_1.png" width="750" height="550" usemap="#TEST" ismap>
+            <map name="TEST">
+                <area shape="circle" coords="15, 98, 16" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" alt="Rickroll">
+                <area shape="rect" coords="315,340,375,450" href="https://www.instagr.am/just.vityok31/">
+                <area shape="rect" coords="390,375,470,470" href="https://www.instagr.am/littlsneak/">
+            </map>
+        </p>
+    </body>
+</html>
