@@ -1,0 +1,29 @@
+<!--
+    Теґ <datalist> <option value="ВАРІАНТ"> </datalist> дає заготовленні варіанти
+    для внесення у <input> у вигляді вистрибуючого листа.
+    Атрибути:
+        id="ІДЕНТИФІКАТОР" пов'язує певний <input> із певним <datalist> через атрибути 
+            list="ІДЕНТИФІКАТОР"(<input>) і id="ІДЕНТИФІКАТОР"(<datalist>).
+-->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>study tag datalist</title>
+    </head>
+    <body>
+        <p>
+            <input list="dumbname">
+            <datalist id="dumbname">
+                <option value="Розововолоса косатка"></option>
+                <option value="Кракен з'ївший Берестечко"></option>
+                <option value="Інша наркоманська фігня"></option>
+            </datalist>
+        </p>
+    </body>
+</html>
+
+<!--
+    В ІДЕНТИФІКАТОРІ <input> "#" ставити НЕ СЛІД!
+-->
