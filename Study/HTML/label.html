@@ -1,0 +1,36 @@
+<!--
+    Теґ <label> ТЕКСТ <label> потрібен для того, аби пов'язати якись елемент форми із певною міткою.
+    Це потрібно для того, щоб можна було симулювати нажимання на сам елемент, нажимаючи на текст 
+    поруч з ним, стрибати по елементу, як по посиланню і прив'язувати якісь хоткеї.
+    Для того, щоб пов'язати <label> із елементом є два варіанти:
+    1. Вставити елемент форми всередину теґу <label>.
+        <label><input type="checkbox"> ТЕКСТ </label>
+    2. Прив'язати по ідентифікатору, заданому в id="НАЗВА" атрибутом for="НАЗВА". 
+        <input id="checkbox1" type="checkbox"> <label for="checkbox1"> ТЕКСТ </label>
+-->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>study tag label</title>
+    </head>
+    <body>
+        <form>
+            <label><input type="checkbox">ЧЕКБОКС1</label><br>
+            <label><input type="checkbox">ЧЕКБОКС2</label><br>
+            <label><input type="checkbox">ЧЕКБОКС3</label><br>
+            <label><input type="checkbox">ЧЕКБОКС4</label><br><hr>
+        </form>
+        <form>
+            <input id="chk1" type="checkbox"> <label for="chk1">ЧЕКБОКС1</label><br>
+            <input id="chk2" type="checkbox"> <label for="chk2">ЧЕКБОКС2</label><br>
+            <input id="chk3" type="checkbox"> <label for="chk3">ЧЕКБОКС3</label><br>
+            <input id="chk4" type="checkbox"> <label for="chk4">ЧЕКБОКС4</label><br>
+        </form>
+    </body>
+</html>
+
+<!--
+    Ремарочка: чекбокси тут просто для прикладу, можна підставляти любий тип <input>-у, який треба, або любий елемент.
+-->

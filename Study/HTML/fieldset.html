@@ -1,0 +1,36 @@
+<!--
+    Теґ <fieldset> ВМІСТ </fieldset> потрібен для згрупування елементів форми. Це потрібно для полегшення роботи з великими
+    кількостями даних. Наприклад, одна форма має працювати з галочками, друга з текстом, третя ще з чимось, а для взручності
+    їх можна поскладувати в такі собі групи, котрі є обрамленими і мають спільний заголовок.
+    Атрибути:
+        disabled - робить елементи форми у групі неактивними.
+        form="НАЗВА" - пов'язує групу із її формою, якщо <fieldset> не всередині неї.
+-->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>study tag fieldset</title>
+    </head>
+    <body>
+        <form>
+            <fieldset>
+                <legend>Помнож 2х4</legend>
+                <label><input type="radio" name="radio1">8</label><br>
+                <label><input type="radio" name="radio1">4</label><br>
+                <label><input type="radio" name="radio1">16</label><br>
+                <input type="submit">
+            </fieldset>
+        </form>
+        <form id="form1">
+        </form>
+        <fieldset form="form1">
+            <legend>Помнож 2х4</legend>
+            <label><input type="radio" name="radio2">8</label><br>
+            <label><input type="radio" name="radio2">4</label><br>
+            <label><input type="radio" name="radio2">16</label><br>
+            <input type="submit">
+        </fieldset>
+    </body>
+</html>
