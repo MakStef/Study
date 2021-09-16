@@ -1,0 +1,130 @@
+<!--
+    Теґ <input> - це основний, багатосторонній інструмент взаємодії користувача з формою.
+    <input> на сайті взагалом появляється у вигляді кнопок, просторів для тексту, коробок
+    з галочками, перемикачів та т.п.
+    Основний атрибут type="ЗНАЧЕННЯ" - задає тип для <input>, котрий зазначає, як буде
+    виглядати кнопка і що вона буде робити. Саме від її типу залежать використовувані
+    атрибути.
+    Атрибути:
+        accept="MIME-тип" - встановлює фільтр на прийманих файлів, щоб обирався тільки
+            певний тип файлів.
+        alt="ТЕКСТ" - задає альтернативний текст для кнопки з зображенням на випадок
+            неможливості її відображення.
+        autocomplete="on/off" - чи включити автозаповнення для певних type="(text, emeil,
+            password, search, tel)", чи ні.
+        autofocus - встановлює фокус на <input>.
+        checked - ставить галочку на checkbox або radio.
+        dirname="НАЗВА" - при цьому атрибуті під час відправлення даних клієнтом серверу
+            утворюється пара ключ:значення, при котрому ключ - це НАЗВА, дана в атрибуті,
+            а значення - це дані, котрі підставляються браузером.
+        disabled - робить <input> не здатним до використання жодним чином.
+        form="НАЗВА" - задає форму, з котрою <input> пов'язаний через її НАЗВУ.
+        formaction="АДРЕСА" - задає обробник надісланих даних для типу type="submit".
+        formenctype="ЗНАЧЕННЯ" — тип кодування даних, котрі прийме форма.
+        formmethod="ЗНАЧЕННЯ" — обирає, який метод запиту формі використовувати.
+        formnovalidate — відміняє вмонтовану перевірку даних на коректність.
+        formtarget="ЗНАЧЕННЯ" — визначає, куди формі відкрити зворотній результат.
+        list="НАЗВА" - вказує на <datalist> з вкладеними <option>, щоб запропонувати
+            певні заготовлені варіанти вводу.
+        max="ЧИСЛО" - надає стелю для вводу числа або дати в полі форми для 
+            type=""(number, range, date).
+        min="ЧИСЛО" - надає дно для вводу числа або дати в полі форми для 
+            type=""(number, range, date).
+        maxlenght="ЧИСЛО" - надає стелю для вводу тексту в полі форми для 
+            type=""(number, range, date).
+        minlenght="ЧИСЛО" - надає дно для вводу тексту в полі форми для 
+            type=""(number, range, date).
+        multiple - задає можливість завантажувати в поле для загрузки файлів зразу
+            кілька екземплярів файлів. type=""(file, emeil).
+        name="НАЗВА" - задає певну назву елементу, по якій до нього можна звернутись.
+        pattern="ЗНАЧЕННЯ" - задає певну перевірку на правильність заповнення <input>
+            і не відправляє дані, поки не заповнено правильно.
+        placeholder="ТЕКСТ" - задає певний ТЕКС-підказку на полі.
+        readonly - встановлює, що міст поля неможливо редагувати, тільки читати.
+        required - задає обов'язковість заповнення поля.
+        size="ЧИСЛО" - задає ширину текстовому полю.
+        src="АДРЕСА" - задає шлях до зображення на полі з зображенням.
+        step="ЧИСЛО" - задає крок прокрутки для повзунків і чисел.
+        type="ЗНАЧЕННЯ" - задає <input>-у тип.
+        value="ЗНАЧЕННЯ" - задає якесь значення елементу. Воно потрібне для таких типів,
+            як type=""(checkbox, radio).
+-->
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>study tag input</title>
+		<style>
+			header {
+				background-color: darkgray;
+				margin-bottom:-10%;
+			}
+
+			#search1 {
+				margin-top:-3%;
+				margin-left:80%;
+				margin-bottom:10;
+			}
+            #login {
+                margin-top: 12%;
+            }
+            
+            #checklist {
+                margin-top: 5%;
+            }
+            
+            #comment {
+                margin-top: 22%;
+                margin-left: 10%;
+            }
+
+            footer {
+                background-color: lightgray;
+            }
+		</style>
+	</head>
+	<body>
+		<header>
+			<div>
+				<form>
+					<img src="Sources/Graph/amogus.png" width="120" height="70" alt="icon">
+					<div id="search1">
+						<input type="search" placeholder="Шукай тут">
+						<input type="submit">
+					</div>
+				</form>
+                <hr>
+                <hr>
+			</div>
+		</header>
+        <div id="login">
+            <form>
+                <input type="email" placeholder="email@gmail.com"><br>
+                <input type="password" placeholder="password">
+                <input type="submit">
+            </form><hr>
+        </div>
+        <div id="checklist">
+            <form>
+                <input type="checkbox" name="checkbox"> Варіант відповіді 1<br>
+                <input type="checkbox" name="checkbox"> Варіант відповіді 2<br>
+                <input type="checkbox" name="checkbox"> Варіант відповіді 3<br>
+                <input type="checkbox" name="checkbox"> Варіант відповіді 4<br>
+                <input type="radio" name="checkradio"> Варіант відповіді 1<br>
+                <input type="radio" name="checkradio"> Варіант відповіді 2<br>
+                <input type="radio" name="checkradio"> Варіант відповіді 3<br>
+                <input type="radio" name="checkradio"> Варіант відповіді 4<br>
+                <input type="submit" value="Надіслати">
+                <input type="reset" value="Очистити">
+            </form>
+        </div>
+        <footer>
+            <div id="comment">
+                <hr><br>
+                Коментарій:<br>
+                <input type="text" size="40">
+            </div>
+        </footer>
+	</body>
+</html>
