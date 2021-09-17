@@ -1,0 +1,93 @@
+<!--
+    Теґ <main>ТЕКСТ</main> має містити у собі основний вміст документу, котрий є унікальним і не має включати 
+    у себе повторювані елементи сайту, такі як навігаційні елементи, назви сайтів, логотипи, пошукові форми, 
+    банери. Не можна вкладати його всередину <article>, <aside>, <footer>, <header>, <nav> або <section>.
+    Саме для вміщення основного вмісту сайту він і потрібен.
+-->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>study tag main</title>
+        <style>
+            a {
+                text-decoration: none;
+            }
+            header {
+                font-size: 22px;
+                color: grey;
+            }
+            main {
+                position: absolute;
+                margin-top: 8%;
+                margin-left: 7%;
+            }
+            footer {
+                position: absolute;
+                margin-top: 50%;
+                margin-left: 13%;
+            }
+            #header_text {
+                position: absolute;
+                font-size: 180%;
+                margin-left: 13%;
+                margin-top: 1%;
+            }
+            #header_logo {
+                position: absolute;
+             }
+            #search1 {
+		        position: absolute;
+                margin-left: 80%;
+            }
+            #nav_menu {
+                position: absolute;
+                margin-left: 80%;
+                margin-top: 10%;
+                border-width: 2px;
+                border-style: double;
+            }
+
+        </style>
+    </head>
+    <body>
+        <header>
+            <div id="header_text"><a>Amog Us</a></div>
+            <div id="header_logo">
+                <a><img src="Sources/Graph/amogus.png" width="175" height="90"></a>
+            </div>
+        </header>
+        <main>
+            <h1><blockquote>Хто проживає на дні океану?</blockquote></h1>
+            <div>
+                Саме ця відома фраза із відкриваючого кліпу мультсеріалу <cite>Sponge Bob</cite> сидить у багатьох в голові.
+            </div>
+        </main>
+        <div id="nav_menu">
+            <ul>
+                <li>ПУНКТ1</li>
+                <li>ПУНКТ2</li>
+                <li>ПУНКТ3</li>
+                <li>ПУНКТ4</li>
+                <li>ПУНКТ5</li>
+                <li>ПУНКТ6</li>
+                <li>ПУНКТ7</li>
+                <li>ПУНКТ8</li>
+                <li>ПУНКТ9</li>
+                <li>ПУНКТ10</li>
+                <li>ПУНКТ11</li>
+                <li>ПУНКТ12</li>
+                <li>ПУНКТ13</li>
+                <li>ПУНКТ14</li>
+                <li>ПУНКТ15</li>
+            </ul>
+        </div>
+        <footer>
+            <form>
+                <textarea name="comment" placeholder="Коментарій"></textarea>
+                <input type="submit" name="comment" value="Відправити">
+            </form>
+        </footer>
+    </body>
+</html>

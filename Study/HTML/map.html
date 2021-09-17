@@ -1,0 +1,22 @@
+<!--
+    Теґ <map> <area> </map> - це контейнер, котрий містить у собі певні активні зони на <img>,
+    в котрого є та ж сама НАЗВА, що і в <map>. Його завдання просто пов'язати ці зони із зображенням.
+    З'язування відбувається так:
+    В <img> встановлюється usemap="#НАЗВА", де "#" - обов'язковий!!!
+    А в <map> встановлюється name="НАЗВА", де "#" - лишній!!!
+-->
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>study tag map</title>
+    </head>
+    <body>
+        <img src="Sources/Graph/html_explanation.png" usemap="#explanation" width="800" height="520">
+        <map name="explanation">
+            <area href="head.html" shape="rect" coords="15, 185, 145, 315">
+            <area href="body.html" shape="rect" coords="185, 115, 385, 510">
+            <area href="html.html" shape="rect" coords="445, 8, 645, 516">
+        </map>
+    </body>
+</html>
