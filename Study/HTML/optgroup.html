@@ -1,0 +1,44 @@
+<!--
+    Теґ <optgroup> <option> <option> </optgroup> - згруповує <option>-и в одну групу, заодно стилізуючи її.
+    Атрибути:
+        disabled - забирає змогу використовувати елементи групи.
+        label="ЗАГОЛОВОК" - задає заголовок цієї групи.
+-->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>study tag optgroup</title>
+    </head>
+    <body>
+        <select>
+            <optgroup label="GROUP1">
+                <option value="пункт1">пункт1</option>
+                <option value="пункт2">пункт2</option>
+                <option value="пункт3">пункт3</option>
+                <option value="пункт4">пункт4</option>
+                <option value="пункт5">пункт5</option>
+                <option value="пункт6">пункт6</option>
+                <option value="пункт7">пункт7</option>
+            </optgroup>
+            <optgroup label="GROUP2" disabled>
+                <option value="пункт8">пункт8</option>
+                <option value="пункт9">пункт9</option>
+                <option value="пункт10">пункт10</option>
+                <option value="пункт11">пункт11</option>
+                <option value="пункт12">пункт12</option>
+                <option value="пункт13">пункт13</option>
+            </optgroup>
+        </select><br>
+        <select>
+            <option value="пункт1">пункт1</option>
+            <option value="пункт2">пункт2</option>
+            <option value="пункт3">пункт3</option>
+            <option value="пункт4">пункт4</option>
+            <option value="пункт5">пункт5</option>
+            <option value="пункт6">пункт6</option>
+            <option value="пункт7">пункт7</option>
+        </select>
+    </body>
+</html>

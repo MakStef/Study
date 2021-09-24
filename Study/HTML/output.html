@@ -1,0 +1,22 @@
+<!--
+    Теґ <output> ТЕКСТ </output> - задає зону, на котру будуть виводитись дані, котрі прийшли після оброблення
+    скриптами. ТЕКСТ - це стандартне значення цієї зони.
+    Атрибути:
+        for="НАЗВА" - виявляє один або кілька ідентифікаторів для зв'язки з <output>.
+        form="НАЗВА" - задає НАЗВУ форми, котрій <output> належить.
+        name="НАЗВА" - задає НАЗВУ для <output>.
+-->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>study tag output</title>
+    </head>
+    <body>
+        <form oninput="result.value=(cm.value/2.54).toFixed(2)">
+            <p>Введіть розмір у сантиметрах: <input type="number" name="cm"></p>
+            <p>Розмір у дюймах: <output name="result"></output></p>
+        </form>
+    </body>
+</html>
