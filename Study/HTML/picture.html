@@ -1,0 +1,19 @@
+<!--
+    Теґ <picture> <source> <img> </picture> - це контейнер для <source srcset="АДРЕСА1"> <source srcset="АДРЕСА2"> ... <img src="АДРЕСА n">.
+    Він потрібен, щоб зробити зображення адаптивним. Якщо бути точнішим, то воно буде намагатись підставити наступну адресу, якщо попередня
+    не вигідна або не підтримується браузером. Деталі тут: https://pepelsbey.net/pres/picture/
+-->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>study tag picture</title>
+    </head>
+    <body>
+        <picture>
+            <source srcset="Sources/Graph/horse.svg">
+            <img width="640" height="480" src="Sources/Graph/horse.png">
+        </picture>
+    </body>
+</html>
