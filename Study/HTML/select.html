@@ -1,0 +1,31 @@
+<!--
+    Теґ <select> <option> </select> - елемент, всередині котрого є варіанти вибору, виглядає або як звичайний список,
+    або як випадаючий, залежно від кількості варіантів і атрибуту size.
+    Атрибути:
+        autofocus - автоматично встановлює фокус на <select>.
+        disabled - робить <select> неактивним.
+        form="НАЗВА" - пов'язує <select> із формою <form>.
+        multiple - дозволяє обирати одразу кілька варіантів через "shift" або "ctrl".
+        name="НАЗВА" - дає назву для <select>, щоб її можна було відправити на сервер або для обробки даних скриптом.
+        required - обрання варіанту списку — обов'язкове для відправки форми на сервер.
+        size="ЧИСЛО" - задає, скільки рядків буде видно у списку.
+-->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>study tag select</title>
+    </head>
+    <body>
+        <form>
+            <select name="select1" required multiple size=4>Обери якийсь варіант
+                <option>Варіант1 </option>
+                <option>Варіант2 </option>
+                <option>Варіант3 </option>
+                <option>Варіант4 </option>
+            </select><br>
+            <input type="submit" name="select1">
+        </form>
+    </body>
+</html>
