@@ -1,0 +1,33 @@
+<!--
+    Теґ <source> - прив'язує файли до <audio>,  <video> або <picture>, тобто до медійних об'єктів.
+    Всередині <audio> і <video>, <source> має йти після медійних файлів, але до <track>. А всередині <picture>
+    має йти перед <img>.
+    Атрибути: 
+        media="ЗНАЧЕННЯ" - задає медіа-запит, за яким буде виводитись зображення. Працює тільки всередині <picture>.
+        sizes="ЧИСЛО vw, em" - де vw — відсоток ширини від області перегляду, em - точка зупинки. Тільки для <picture>.
+        src="АДРЕСА" - адреса медіа-файлу.
+        srcset="АДРЕСА1, АДРЕСА2" - задає кілька джерел, котрі будуть обиратись в залежності від ситуації. Тільки для <picture>.
+        type="MIME-ТИП" - задає MIME-тип для медіа-файлу.
+-->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>study tag source</title>
+    </head>
+    <body>
+        <audio controls>
+            Аудіо-файл
+            <source src="Sources/Other/test.mp3">
+        </audio><br>
+        <picture>
+            <source srcset="Sources/Graph/horse.svg">
+            <img width="340" height="174" src="Sources/Graph/horse.png">
+        </picture><br>
+        <video controls>
+            Відео-файл
+            <source src="Sources/Graph/test.mp4">
+        </video><br>
+    </body>
+</html>
