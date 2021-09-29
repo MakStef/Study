@@ -1,0 +1,70 @@
+<!--
+    Теґ <tfoot> </tfoot> - задає підвал таблиці. Тобто окремий ряд чи ряди внизу таблиці. Зазвичай це використовують
+    для пояснення призначення колон таблиць або для чогось схожого.
+    <tfoot> вставляється в <table> в самому кінці, і ніякого контейнера під ним бути не має. Дозволяється тільки один <tfoot> в <table>.
+-->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>study tag tfoot</title>
+        <style>
+            tbody > tr > th {
+                background-color: #dde;
+                border-bottom: 1.5px solid #bbb;
+                font-weight: normal;
+                }
+        </style>
+    </head>
+    <body>
+        <table>
+            <thead id="tableHead1">
+                <tr>
+                    <th>КОЛОНА1</th>
+                    <th>КОЛОНА2</th>
+                    <th>КОЛОНА3</th>
+                    <th>КОЛОНА4</th>
+                    <th>КОЛОНА5</th>
+                    <th>КОЛОНА6</th>
+                </tr>
+                <tr>
+                    <td>ПРИКЛАД1</td>
+                    <td>ПРИКЛАД2</td>
+                    <td>ПРИКЛАД3</td>
+                    <td>ПРИКЛАД4</td>
+                    <td>ПРИКЛАД5</td>
+                    <td>ПРИКЛАД6</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Р1 Ел1</td>
+                    <td>Р1 Ел2</td>
+                    <td>Р1 Ел3</td>
+                    <td>Р1 Ел4</td>
+                    <td>Р1 Ел5</td>
+                    <td>Р1 Ел6</td>
+                </tr>
+                <tr>
+                    <td>Р2 Ел1</td>
+                    <td>Р2 Ел2</td>
+                    <td>Р2 Ел3</td>
+                    <td>Р2 Ел4</td>
+                    <td>Р2 Ел5</td>
+                    <td>Р2 Ел6</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td>Клітинки-приклади1</td>
+                    <td>Клітинки-приклади2</td>
+                    <td>Клітинки-приклади3</td>
+                    <td>Клітинки-приклади4</td>
+                    <td>Клітинки-приклади5</td>
+                    <td>Клітинки-приклади6</td>
+                </tr>
+            </tfoot>
+        </table>
+    </body>
+</html>
