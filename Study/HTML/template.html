@@ -1,0 +1,47 @@
+<!--
+    Теґ <template> ТЕКСТ </template> - зберігає на стороні клієнту HTML-шаблон, котрий при загрузці сторінки
+    не відображається, а щоб ним скористатись, слід застосувати JS скрипти.
+    Застосовується він зазвичай у тих випадках, коли потрібно щось повторюване заповнити якимось вмістом,
+    наприклад, <table> з його повторюваними <td> і <th>. Працює, очевидно, і з іншим повторюваним наповненням.
+-->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+    </head>
+    <body>
+        <table>
+            <tr>
+                <th>ПРИКЛАД</th>
+                <th>ЙОГО ЗНАЧЕННЯ</th>
+            </tr>
+            <tbody>
+                <template id="row">
+                    <tr><td><td><td>
+                </template>
+            </tbody>
+        </table>
+
+
+        <script>
+            var data = [
+             { example: 1, value: 'СЛОВО1'},
+             { example: 2, value: 'СЛОВО2'},
+             { example: 3, value: 'СЛОВО3'},
+             { example: 4, value: 'СЛОВО4'},
+             { example: 5, value: 'СЛОВО5'},
+            ];
+            var template = document.querySelector('#row');
+            for (var i = 0; i < data.length; i++) {
+             var mohs = data[i];
+             var clone = template.content.cloneNode(true);
+             var cells = clone.querySelectorAll('td');
+             cells[0].textContent = mohs.example;
+             cells[1].textContent = mohs.value;
+             template.parentNode.appendChild(clone);
+            }
+           </script>
+    </body>
+</html>
