@@ -1,0 +1,25 @@
+<!--
+    Теґ <track> - задає текстовий рядок для елементів <audio> і <video>. Зазвичай цей рядок вміщує у собі
+    субтитри, коментарії,  заголовки і т.д.
+    Атрибути:
+        kind="ЗНАЧЕННЯ" - вказує на тип рядку.
+        src="АДРЕСА" - задає шлях до тексту рядку.
+        srclang="ЗНАЧЕННЯ" - мова рядку.
+        label="ТЕКСТ" - називає дорожку
+-->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>study tag track</title>
+    </head>
+    <body>
+        <video controls width="480" height="360" autoplay>
+            <source src="Sources/Graph/test.mp4">
+            <track kind="subtitles" src="Sources/Other/test.vtt" srclang="en" label="English subtitles" default>
+            <track kind="subtitles" src="Sources/Other/test.vtt" srclang="uk" label="Ukrainian subtitles">
+            Твій браузер не підтримує цей теґ, лол.
+        </video>
+    </body>
+</html>

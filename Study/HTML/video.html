@@ -1,0 +1,27 @@
+<!--
+    Теґ <video> ТЕКСТ </video> - виводить на сайт відео. Якщо елемент недоступний, виводиться ТЕКСТ.
+    Атрибути:
+        autoplays - автоматично відтворює відео після загрузки сайту.
+        controls - додає панель керування на відео.
+        loop - зациклює відтворення відео.
+        width="ЧИСЛО" - задає ширину відео.
+        height="ЧИСЛО" - задає висоту відео.
+        poster="АДРЕСА" - задає адресу до якогось прев'ю для відео, яке буде відображатись, поки воно не буде запущене.
+        preload="ЗНАЧЕННЯ" - обирає, чи попередньо завантажувати відео і, якщо так, то яким чином.
+        src="АДРЕСА" - задає адресу, по котрому можна знайти необхідне відео
+-->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>study tag video</title>
+    </head>
+    <body>
+        <video controls autoplay loop width="480" height="360" poster="Sources/Graph/horse.svg">
+            Елемент не підтримується браузером!
+            <source src="Sources/Graph/test.mp4">
+        </video><br>
+        <video autoplay width="480" height="360" src="Sources/Graph/test.mp4" poster="Sources/Graph/horse.svg">Елемент не підтримується браузером!</video>
+    </body>
+</html>

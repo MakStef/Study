@@ -1,0 +1,87 @@
+<!--
+    Теґ <var> ТЕКСТ </var> - стилізує ТЕКСТ, вказуючи, що це є якась "змінна" в програмному коді.
+-->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>study tag var</title>
+    </head>
+    <body>
+        <p>Якось на дозвіллі я написав одну неважку програму. Її суть полягає у автоматизації процесу штовхання моїх файлів у GIT.
+            <pre><code>
+                import os
+                from sys import exit
+                from time import sleep
+                
+                def check():
+                    global directory, path
+                    os.chdir(path)
+                    os.system("git status")
+                
+                def add():
+                    global directory
+                    os.system(f"git add {directory}")
+                
+                def commit():
+                    msg=input("Введи повідомлення для коміту:\n")
+                    os.system(f'git commit -m "{msg}"')
+                
+                def push():
+                    global remote, branch
+                    os.system(f"git push {remote} {branch}")
+                
+                print("Вітаю, колего, міняємо шлях репозиторію? Так?\n")
+                answ = str(input("т?\n"))
+                if answ == "т":
+                    path=str(input("Введи шлях до репи:\n"))
+                    directory=str(input("Введи, яку папку комітимо:\n"))
+                    remote=str(input("Введи назву remote:\n"))
+                    branch=str(input("Введи назву гілки:\n"))
+                    with open("path.txt", "w", encoding="utf-8") as file:
+                        file.write(path)
+                        file.write("\n"+directory)
+                        file.write("\n"+remote)
+                        file.write("\n"+branch)
+                    check()
+                    add()
+                    commit()
+                    push()
+                else:
+                    with open("path.txt", "r", encoding="utf-8") as data:
+                        lines=data.readlines()
+                    lst=[]
+                    for line in lines:
+                        cleared = line.split("\n")
+                        if "" in cleared:
+                            cleared.pop(cleared.index(""))
+                        lst.append(cleared)
+                    result=[]
+                    for i in lst:
+                        for j in i:
+                            result.append(j)
+                    path=result[0]
+                    directory=result[1]
+                    remote=result[2]
+                    branch=result[3]
+                    check()
+                    print("Виконання git add...")
+                    sleep(0.5)
+                    add()
+                    sleep(2)
+                    print("Виконання git commit...")
+                    commit()
+                    sleep(2)
+                    print("Виконання git push...")
+                    push()
+                
+                print("Роботу завершено, брате, сайонара!")
+                sleep(4.5)
+                exit()</code></pre>
+            У ній ключовими для адаптації до різних умов є чотири змінні: <var>path</var>, <var>directory</var>, 
+            <var>remote</var> і <var>branch</var>, котрі задають відповідно шлях(<var>path</var>) до репозиторію, папку<var>directory</var>), 
+            в котрій потрібно здійснити комміт, пульт(<var>remote</var>) керування і гілку(<var>branch</var>), котру штовхається.
+        </p>
+    </body>
+</html>
