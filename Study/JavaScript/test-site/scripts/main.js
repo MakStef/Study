@@ -1,5 +1,6 @@
 /* Щоби почати розглядати приклади, почни знімати коментування з функцій( а саме: //), котре виставлене в початку рядку. */
-
+console.log('main.js loaded');
+//
 //var myHeading = document.querySelector('h1');
 //myHeading.textContent = 'Hello, world!';
 //
@@ -31,12 +32,13 @@
 //    alert('Click has been detected!');
 //}
 //
-var myImage=document.querySelector('img');
-myImage.onclick = function () {
-    var mySrc = myImage.getAttribute(src);
-    if (mySrc === 'images/wow.png') {
-        mySrc = 'images/horse.png'
-    } else {
-        mySrc = 'images/wow.png'
-    }
-}
+//var myImage = document.querySelector('img');
+//myImage.onclick = function() {
+//    var mySrc = myImage.getAttribute('src');
+//    if(mySrc === 'images/wow.png') {
+//      myImage.setAttribute ('src','images/horse.png');
+//    } else {
+//      myImage.setAttribute ('src','images/wow.png');
+//    }
+//}
+
