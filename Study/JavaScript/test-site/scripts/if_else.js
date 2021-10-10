@@ -11,20 +11,22 @@
 */
 
 myVar1 = 10
-myVar2 = "Слова - це слова!"
+
+document.querySelector('input').onclick() = function () {
+    myVar2 = document.getElementsById('myValue').values;
+    if (myVar2 === 'Слова') {
+        alert('myVar2 - це "Слова"');
+    }
+    else if (myVar2 === 'Слова - це слова!') {
+        alert('myVar2 - "Слова - це слова!"');
+    }
+    else {
+        alert('Я без поняття, що за myVar2! :P');
+    }
+}
 
 if (myVar1 === 100) {
     alert('myVar1 рівне 100');
 } else {
     alert('myVar1 не рівне 100');
-}
-
-if (myVar2 === 'Слова') {
-    alert('myVar2 - це "Слова"')
-}
-else if (myVar2 === 'Слова - це слова!') {
-    alert('myVar2 - "Слова - це слова!"')
-}
-else {
-    alert('Я без поняття, що за myVar2! :P')
 }
