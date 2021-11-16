@@ -1,18 +1,16 @@
-/* 
-    let НАЗВА = ЗНАЧЕННЯ - створює блочну змінну, тобто таку, котра не виходить вище свого блоку, але котра 
-    може бути визвана одразу в кількох блоках. Вона носить якесь своє ЗНАЧЕННЯ і звернутись до неї можна по її НАЗВІ.
+/*
+    let НАЗВА = ЗНАЧЕННЯ;
+    Створює змінну, звернутись до котрої можна по її НАЗВІ.
 */
-let myVar1 = 'Привіт';
-let myVar2 = 'світ!';
-let myVar3 = 'чувак!';
-function hello() {
-    let myVar1 = 'Hello';
-    let myVar2 = 'World!';
-    let myVar4 = 'Dude!';
-    alert(`${myVar1} ${myVar2}`);
-    alert(`${myVar1} ${myVar3}`);
-}
+let currentTempC = 22; // градуси Цельсія
+alert(currentTempC);
+currentTempC = 22.5; // оновили значення змінної, вже не використовуємо ключове слово let
+alert(currentTempC);
 
-hello();
-alert(`${myVar1} ${myVar2}`);
-alert(`${myVar1} ${myVar4}`);
+let myRandomVal; // оикликаючи змінну, їй не обов'язкове якесь значення, якщо нічого не задавати - створиться змінна зі значенням undefined
+
+let myVal1 = "1", myVal2 = 3, myVal3 = myVal1+myVal2;
+alert(myVal1 + myVal2 + myVal3);
+
+myVal1 = "5";
+alert(myVal3)
