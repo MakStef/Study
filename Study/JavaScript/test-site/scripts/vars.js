@@ -1,8 +1,8 @@
 /*
 Є три способи створення змінних:
-    const - незмінна, котру видно в її блоці коду і нижче;
-    let - змінна, котру видно в її блоці коду і нижче;
-    var - змінна, котру видно в її функції.
+    const <ім'я> - незмінна, котру видно в її блоці коду і нижче;
+    let <ім'я> - змінна, котру видно в її блоці коду і нижче;
+    var <ім'я> - змінна, котру видно в її функції.
 */
 
 /*
@@ -22,6 +22,6 @@ var studying = false
 var anyTroubles = false
 alert(`${myName} ${myAge} ${studying}`)
 myName = "not a Maksym" // скрипт не буде продовжуватись після цього рядка, бо виникає проблема - спроба зміни незмінної.
-myAge = 16+1
-studying  = (anyTroubles == true) ? false : true;
+myAge = 16 + 1
+studying = (anyTroubles == true) ? false : true;
 alert(`${myName}, ${myAge}, ${studying}`)
