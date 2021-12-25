@@ -24,12 +24,17 @@ myArray[1];
 */
 myArray.pop()
 alert(myArray)
+
 myArray.push('Man')
 alert(myArray)
+
 myArray.splice(0, myArray.length, 'item1', 'item2', 'item3')
 alert(myArray)
+
 myArray.shift()
 alert(myArray)
+
 myArray.unshift('new item1')
 alert(myArray)
+
 alert(myArray.indexOf('new item1'))
