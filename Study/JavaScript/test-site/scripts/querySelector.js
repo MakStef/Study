@@ -11,6 +11,7 @@ myElement.classList.add('border__blue');
 document.querySelectorAll(<селектор>) - знаходить в документі усі елементи по селектору, і утворює з них мета-масив.
 */
 const myElements = document.querySelectorAll('div');
+myElements[1].classList.add('border__blue');
 for (let element of myElements) {
     element.classList.toggle('border__blue');
 }
