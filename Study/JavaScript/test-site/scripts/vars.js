@@ -13,7 +13,7 @@ Boolean - true або false;
 BigInt - число, котре більше за Number.MAX_SAFE_INTEGER;
 null - значення немає;
 undefined - значення не знайдене;
-object - якийсь кусок коду, об'єкт.
+object - список ключів:значень.
 */
 
 const myName = "Maksym"
