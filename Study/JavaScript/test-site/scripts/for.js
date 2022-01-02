@@ -13,3 +13,4 @@ for (let Var = 0; Var < 10; Var++) {
 for (let Var = 20; Var > 10; Var--) {
     alert(Var)
 }
+ 

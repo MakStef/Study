@@ -41,3 +41,14 @@ alert(myArray)
 alert(myArray.indexOf('new item1'))
 
 myArray.forEach(alert)
+
+/*
+for (let <ім'я> of <ім'я масиву>) {
+    <код>
+} 
+Цикл, що проходить по всім елементам масиву, створюючи всередині змінну з якимось ім'ям, котра буде отримувати значення елементу, по якому цикл на дану мить проходиться.
+*/
+
+for (let myItem of myArray) {
+    alert(myItem)
+}
